@@ -9,9 +9,13 @@ Requires PowerShell 3.0 or higher.
 
 # Quick how-to:
 
+This example shows how to modify XML field schema for list with ID `cff8ae4b-a78d-444c-8efd-5fe290821cb9`, which is stored in Sharepoint content database `SP_CONTENT` on server `SQLSRV`.
+
+How to find list guid: [how to find Sharepoint Guid of a list](http://stackoverflow.com/questions/19630267/how-to-find-sharepoint-guid-of-a-list) , [Get the List id (Guid) for a list by name in SP 2010 Programatically](http://sharepoint.stackexchange.com/questions/70058/get-the-list-id-guid-for-a-list-by-name-in-sp-2010-programatically).
+
 * Download module as Zip (unblock zip file before unpacking) or clone this repo using Git
 * Import module: `Import-Module -Path 'X:\Path\To\WssCompressedStructure\Module'`
-* Backup `XML field schema` blob for SharePoint list to file: 
+* Backup `XML field schema` blob for SharePoint to file: 
 
         Get-SpListWssCompressedStructure -ServerInstance SQLSRV -Database SP_CONTENT -ContentTypes -ListId 'cff8ae4b-a78d-444c-8efd-5fe290821cb9' | Export-WssCompressedStructureBinary -DestinationPath 'X:\Wss\'
 
