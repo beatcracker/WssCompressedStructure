@@ -1,3 +1,6 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/u958pps82xgh0wua?svg=true)](https://ci.appveyor.com/project/beatcracker/wsscompressedstructure)
+
+
 # `WssCompressedStructure` PowerShell module
 
 This module allows you to get/set `XML field schema`/`Content Types` for SharePoint list directly in the content database.
