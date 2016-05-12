@@ -1,6 +1,8 @@
 # `WssCompressedStructure` PowerShell module
 
-This module allows you to get/set `XML field schema`/`Content Types` for SharePoint list directly in the content database. They are stored in database as [WSS Compressed Structures](https://msdn.microsoft.com/en-us/library/hh661051.aspx).
+This module allows you to get/set `XML field schema`/`Content Types` for SharePoint list directly in the content database.
+They are stored in database as [WSS Compressed Structures](https://msdn.microsoft.com/en-us/library/hh661051.aspx).
+Requires PowerShell 3.0 or higher.
 
 # Quick how-to:
 
