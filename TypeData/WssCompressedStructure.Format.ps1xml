@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+  <DefaultSettings>
+    <EnumerableExpansions>
+        <EnumerableExpansion>
+            <Expand>Both</Expand>
+        </EnumerableExpansion>
+    </EnumerableExpansions>
+  </DefaultSettings>
+    <ViewDefinitions>
+        <View>
+            <Name>WssCompressedStructureView</Name>
+                <ViewSelectedBy>
+                    <TypeName>WssCompressedStructure.Header</TypeName>
+                </ViewSelectedBy>
+                <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                        <ListItems>
+                            <ListItem>
+                                <PropertyName>ID</PropertyName>
+                                <FormatString>{0:X2}</FormatString>
+                            </ListItem>
+                            <ListItem>
+                                <Label>Version</Label>
+                                <ScriptBlock>[System.Text.Encoding]::ASCII.GetString($_.Version, 0, 2)</ScriptBlock>
+                            </ListItem>
+                            <ListItem>
+                                <Label>FileHeaderSize</Label>
+                                <ScriptBlock>[System.BitConverter]::ToUInt32($_.FileHeaderSize, 0)</ScriptBlock>
+                            </ListItem>
+                            <ListItem>
+                                <Label>OrigSize</Label>
+                                <ScriptBlock>[System.BitConverter]::ToUInt32($_.OrigSize, 0)</ScriptBlock>
+                            </ListItem>
+                            <ListItem>
+                                <PropertyName>ZlibStream</PropertyName>
+                            </ListItem>
+                        </ListItems>
+                    </ListEntry>
+                </ListEntries>
+            </ListControl>
+        </View>
+        <View>
+            <Name>WssCompressedStructureView</Name>
+                <ViewSelectedBy>
+                    <TypeName>WssCompressedStructure.Header</TypeName>
+                </ViewSelectedBy>
+            <TableControl>
+                <TableHeaders>
+                    <TableColumnHeader>
+                        <Label>ID</Label>
+                    </TableColumnHeader>
+                    <TableColumnHeader>
+                        <Label>Version</Label>
+                        <Alignment>Right</Alignment>
+                    </TableColumnHeader>
+                    <TableColumnHeader>
+                        <Label>FileHeaderSize</Label>
+                        <Alignment>Right</Alignment>
+                    </TableColumnHeader>
+                    <TableColumnHeader>
+                        <Label>OrigSize</Label>
+                        <Alignment>Right</Alignment>
+                    </TableColumnHeader>
+                    <TableColumnHeader>
+                        <Label>ZlibStream</Label>
+                    </TableColumnHeader>
+                </TableHeaders>
+                <TableRowEntries>
+                    <TableRowEntry>
+                        <TableColumnItems>
+                            <TableColumnItem>
+                                <PropertyName>ID</PropertyName>
+                                <FormatString>{0:X2}</FormatString>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <ScriptBlock>[System.Text.Encoding]::ASCII.GetString($_.Version, 0, 2)</ScriptBlock>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <ScriptBlock>[System.BitConverter]::ToUInt32($_.FileHeaderSize, 0)</ScriptBlock>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <ScriptBlock>[System.BitConverter]::ToUInt32($_.OrigSize, 0)</ScriptBlock>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>ZlibStream</PropertyName>
+                            </TableColumnItem>
+                        </TableColumnItems>
+                    </TableRowEntry>
+                 </TableRowEntries>
+            </TableControl>
+        </View>
+    </ViewDefinitions>
+</Configuration>
