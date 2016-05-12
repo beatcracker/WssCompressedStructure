@@ -77,10 +77,6 @@ Describe "$FunctionName" {
 
             Assert-MockCalled Invoke-Sqlcmd2 -Times 1
         }
-    }
-
-    InModuleScope WssCompressedStructure {
-        $here = $PSScriptRoot
 
         It 'Converts existing xml file to WssCompressedStructure and Sets SharePoint list Field value in database to it' {
             Mock Invoke-Sqlcmd2 {}
