@@ -26,7 +26,7 @@ Requires PowerShell 3.0 or higher.
 
 * If something goes wrong, restore `XML field schema` from blob:
 
-        Import-WssCompressedStructureBinary -Path 'X:\Wss\cff8ae4b-a78d-444c-8efd-5fe290821cb9.bin' | Set-SpListWssCompressedStructure -ServerInstance SQLSRV -Database SP_CONTENT -Fields -ListId 'cff8ae4b-a78d-444c-8efd-5fe290821cb9'
+        'X:\Wss\cff8ae4b-a78d-444c-8efd-5fe290821cb9.bin' | Import-WssCompressedStructureBinary | Set-SpListWssCompressedStructure -ServerInstance SQLSRV -Database SP_CONTENT -Fields -ListId 'cff8ae4b-a78d-444c-8efd-5fe290821cb9'
 
 # WARNING:
  
