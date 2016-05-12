@@ -89,7 +89,7 @@ function Set-SpListWssCompressedStructure
         $ConfirmAll = $false
 
         if($PSCmdlet.ShouldProcess( 
-            "This operation will modify your SharePoint database!",
+            'This operation will modify your SharePoint database!',
             "
             Server: $ServerInstance
             Database: $Database
