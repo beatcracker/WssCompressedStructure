@@ -31,6 +31,16 @@
 
 .Parameter Force
     Suppress confirmation. Use with -Confirm:$false to suppress all confirmations.
+
+.Example
+    'X:\Wss\cff8ae4b-a78d-444c-8efd-5fe290821cb9.bin' | Import-WssCompressedStructureBinary | Set-SpListWssCompressedStructure -ServerInstance SQLSRV -Database SP_CONTENT -Fields -ListId 'cff8ae4b-a78d-444c-8efd-5fe290821cb9'
+    Import XML field schema from binary file 'cff8ae4b-a78d-444c-8efd-5fe290821cb9.bin' and update it in content database for list with ID 'cff8ae4b-a78d-444c-8efd-5fe290821cb9'
+    
+
+.Example
+    New-WssCompressedStructure -Path 'X:\Wss\cff8ae4b-a78d-444c-8efd-5fe290821cb9.xml' | Set-SpListWssCompressedStructure -ServerInstance SQLSRV -Database SP_CONTENT -Fields -ListId 'cff8ae4b-a78d-444c-8efd-5fe290821cb9'
+    Create new XML field schema from XML file 'cff8ae4b-a78d-444c-8efd-5fe290821cb9.xml' and update it in content database for list with ID 'cff8ae4b-a78d-444c-8efd-5fe290821cb9'
+
 #>
 function Set-SpListWssCompressedStructure
 {
