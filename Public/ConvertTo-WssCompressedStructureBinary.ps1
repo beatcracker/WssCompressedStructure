@@ -14,7 +14,7 @@
 function ConvertTo-WssCompressedStructureBinary
 {
     # Suppressing warning, see comment in Process block
-    [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUseOutputTypeCorrectly')]
+    [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUseOutputTypeCorrectly', '')]
     [CmdletBinding()]
     [OutputType([byte[]])]
     Param

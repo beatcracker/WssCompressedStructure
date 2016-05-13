@@ -25,6 +25,8 @@
 #>
 function New-WssCompressedStructure
 {
+    # Suppressing warning: we don't actually change system state
+    [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUseShouldProcessForStateChangingFunctions', '')]
     [CmdletBinding(DefaultParameterSetName = 'String')]
     Param
     (
