@@ -13,6 +13,8 @@
 #>
 function ConvertTo-WssCompressedStructureBinary
 {
+    # Suppressing warning, see comment in Process block
+    [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUseOutputTypeCorrectly')]
     [CmdletBinding()]
     [OutputType([byte[]])]
     Param
@@ -26,6 +28,8 @@ function ConvertTo-WssCompressedStructureBinary
 
     Process
     {
+        # Comma is used to stop PS from wrapping output to System.Object,
+        # so we can write [byte[]] to the pipeline
         ,[byte[]]$(
             foreach($prop in (New-WssCompressedStructureHeader).PsObject.Properties.Name){
                 $InputObject.$prop
