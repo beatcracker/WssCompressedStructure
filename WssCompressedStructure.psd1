@@ -7,8 +7,9 @@
 @{
 
 # Script module or binary module file associated with this manifest.
-# RootModule = ''
-ModuleToProcess = 'WssCompressedStructure.psm1'
+RootModule = 'WssCompressedStructure.psm1'
+
+# ModuleToProcess = ''
 
 # Version number of this module.
 ModuleVersion = '1.0'
