@@ -3,7 +3,7 @@
 
 # [WssCompressedStructure](https://msdn.microsoft.com/en-us/library/hh661051.aspx) PowerShell module
 
-This module allows you to get/set [XML Schema](https://msdn.microsoft.com/en-us/library/ms196289.aspx)/[Content Types](https://msdn.microsoft.com/en-us/library/office/ms472236.aspx) for SharePoint list directly in the content database.
+This module allows you to get/set [XML Schema](https://msdn.microsoft.com/en-us/library/ms196289.aspx) and [Content Types](https://msdn.microsoft.com/en-us/library/office/ms472236.aspx) for SharePoint list directly in the content database.
 
 
 # Requirements
