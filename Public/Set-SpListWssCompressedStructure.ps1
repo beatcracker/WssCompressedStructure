@@ -15,7 +15,7 @@
 .Parameter Database
     A character string specifying the name of a database.
 
-.Parameter Credential
+.Parameter UseSqlCredential
     If this switch is specified, you will be asked for SQL AUTHENTICATION credentials.
     By default, connection is made with WINDOWS AUTHENTICATION and current user's credentials.
     To connect as another user using WINDOWS AUTHENTICATION, use RunAs to launch PowerShell under a different account.
@@ -55,7 +55,7 @@ function Set-SpListWssCompressedStructure
         [ValidateNotNullOrEmpty()]
         [string]$Database,
 
-        [switch]$Credential,
+        [switch]$UseSqlCredential,
 
         [Parameter(Mandatory = $true)]
         [guid]$ListId,
@@ -116,7 +116,7 @@ function Set-SpListWssCompressedStructure
                     }
                 }
 
-                if($Credential){
+                if($UseSqlCredential){
                     $PsCred = Get-Credential
                     $Splat.Add('Credential', $PsCred)
                 }
