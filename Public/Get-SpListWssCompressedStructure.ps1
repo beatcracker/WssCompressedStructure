@@ -18,7 +18,7 @@
     By default, function queries all lists from SharePoint database. You can use this parameter to limit search only to specific lists.
 
 .Parameter Fields
-    Get XML field schema for list. Uses 'tp_Fields' column.
+    Get XML Schema for list. Uses 'tp_Fields' column.
 
 .Parameter ContentTypes
     Get Content Types for list. Uses 'tp_ContentTypes' column.
