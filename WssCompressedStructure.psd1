@@ -26,7 +26,7 @@ CompanyName = 'NA'
 Copyright = '(c) 2016 beatcracker. All rights reserved.'
 
 # Description of the functionality provided by this module
-Description = 'Get/set XML field schema/Content Types for SharePoint list directly in the content database.'
+Description = 'Get/set XML Schema and Content Types for SharePoint list directly in the content database'
 
 # Minimum version of the Windows PowerShell engine required by this module
 PowerShellVersion = '3.0'
