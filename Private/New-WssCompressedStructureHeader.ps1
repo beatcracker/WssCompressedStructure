@@ -26,6 +26,8 @@
 #>
 function New-WssCompressedStructureHeader
 {
+    # Suppressing warning: we don't actually change system state
+    [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUseShouldProcessForStateChangingFunctions', '')]
     [CmdletBinding()]
     Param
     (
