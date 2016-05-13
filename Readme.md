@@ -13,7 +13,7 @@ This module allows you to get/set [XML Schema](https://msdn.microsoft.com/en-us/
 
 # Quick how-to:
 
-This example shows how to modify `XML Schema` for list with ID `cff8ae4b-a78d-444c-8efd-5fe290821cb9`, which is stored in Sharepoint content database `SP_CONTENT` on server `SQLSRV`.
+This example shows how to modify `XML Schema` for list with ID `cff8ae4b-a78d-444c-8efd-5fe290821cb9`, which is stored in SharePoint content database `SP_CONTENT` on server `SQLSRV`.
 
 
 ## Finding list GUID:
