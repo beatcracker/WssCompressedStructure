@@ -26,7 +26,7 @@ This example shows how to modify `XML Schema` for list with ID `cff8ae4b-a78d-44
 
 * Download module as Zip (unblock zip file before unpacking) or clone this repo using Git
 * Import module: `Import-Module -Path 'X:\Path\To\WssCompressedStructure\Module'`
-* Backup `XML Schema` blob for SharePoint to file: 
+* Backup `XML Schema` blob for SharePoint list to file: 
 
         Get-SpListWssCompressedStructure -ServerInstance SQLSRV -Database SP_CONTENT -ContentTypes -ListId 'cff8ae4b-a78d-444c-8efd-5fe290821cb9' | Export-WssCompressedStructureBinary -DestinationPath 'X:\Wss\'
 
