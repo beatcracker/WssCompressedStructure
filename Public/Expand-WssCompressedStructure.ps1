@@ -17,16 +17,16 @@
     Path to the xml file to export. Used for single objects, that don't have ListId propery (created by New-WssCompressedStructure function).
 
 .Example
-    $Object | Expand-WssCompressedStructureBinary -FilePath 'X:\Wss\cff8ae4b-a78d-444c-8efd-5fe290821cb9.bin'
+    $Object | Expand-WssCompressedStructure -FilePath 'X:\Wss\cff8ae4b-a78d-444c-8efd-5fe290821cb9.bin'
 
 .Example
-    Expand-WssCompressedStructureBinary -InputObject $Object -FilePath 'X:\Wss\cff8ae4b-a78d-444c-8efd-5fe290821cb9.bin'
+    Expand-WssCompressedStructure -InputObject $Object -FilePath 'X:\Wss\cff8ae4b-a78d-444c-8efd-5fe290821cb9.bin'
 
 .Example
-    $Object | Expand-WssCompressedStructureBinary -ListId 'cff8ae4b-a78d-444c-8efd-5fe290821cb9' -DestinationPath 'X:\Wss\'
+    $Object | Expand-WssCompressedStructure -ListId 'cff8ae4b-a78d-444c-8efd-5fe290821cb9' -DestinationPath 'X:\Wss\'
 
 .Example
-    Get-SpListWssCompressedStructure -ServerInstance SQLSRV -Database SP_CONTENT -Fields | Expand-WssCompressedStructureBinary -DestinationPath 'X:\Wss\'
+    Get-SpListWssCompressedStructure -ServerInstance SQLSRV -Database SP_CONTENT -Fields | Expand-WssCompressedStructure -DestinationPath 'X:\Wss\'
 #>
 function Expand-WssCompressedStructure
 {
