@@ -28,11 +28,11 @@ This example shows how to modify `XML Schema` for list with ID `cff8ae4b-a78d-44
 * Import module: `Import-Module -Path 'X:\Path\To\WssCompressedStructure\Module'`
 * Backup `XML Schema` blob for SharePoint list to file: 
 
-        Get-SpListWssCompressedStructure -ServerInstance SQLSRV -Database SP_CONTENT -ContentTypes -ListId 'cff8ae4b-a78d-444c-8efd-5fe290821cb9' | Export-WssCompressedStructureBinary -DestinationPath 'X:\Wss\'
+        Get-SpListWssCompressedStructure -ServerInstance SQLSRV -Database SP_CONTENT -Fields -ListId 'cff8ae4b-a78d-444c-8efd-5fe290821cb9' | Export-WssCompressedStructureBinary -DestinationPath 'X:\Wss\'
 
 * Export `XML Schema` for SharePoint list to file: 
 
-        Get-SpListWssCompressedStructure -ServerInstance SQLSRV -Database SP_CONTENT -ContentTypes -ListId 'cff8ae4b-a78d-444c-8efd-5fe290821cb9' | Expand-WssCompressedStructure -DestinationPath 'X:\Wss\'
+        Get-SpListWssCompressedStructure -ServerInstance SQLSRV -Database SP_CONTENT -Fields -ListId 'cff8ae4b-a78d-444c-8efd-5fe290821cb9' | Expand-WssCompressedStructure -DestinationPath 'X:\Wss\'
 
 * Modify file `cff8ae4b-a78d-444c-8efd-5fe290821cb9.xml` to your needs
 * Update `XML Schema` in database for this list:
