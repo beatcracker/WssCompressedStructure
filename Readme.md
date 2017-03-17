@@ -5,6 +5,10 @@
 
 This module allows you to get/set [XML Schema](https://msdn.microsoft.com/en-us/library/ms196289.aspx) and [Content Types](https://msdn.microsoft.com/en-us/library/office/ms472236.aspx) for SharePoint list directly in the content database.
 
+See this blog post for more details:
+
+* https://beatcracker.wordpress.com/2016/05/17/getset-xml-schema-and-content-types-for-sharepoint-list-directly-in-the-content-database/
+
 
 # Requirements
 
@@ -52,5 +56,5 @@ This can **BREAK YOUR SHAREPOINT INSTALLATION** and will put it in the **UNSUPPO
 ## Details:
 
 * [Administration: Supported Database Operations in SharePoint 2010](http://mossblogger.blogspot.com/2010/06/administration-supported-database.html)
-* [We’re Serious – Don’t Modify Your Database or Face Consequences](http://www.collabshow.com/2010/08/12/were-serious-dont-modify-your-database-or-face-consequences)
+* [We're Serious â€“ Don't Modify Your Database or Face Consequences](http://www.collabshow.com/2010/08/12/were-serious-dont-modify-your-database-or-face-consequences)
 * [Is accessing SharePoint content Database in code advisable?](http://sharepoint.stackexchange.com/questions/96291/is-accessing-sharepoint-content-database-in-code-advisable)
